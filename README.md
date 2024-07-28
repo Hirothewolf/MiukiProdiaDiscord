@@ -1,23 +1,23 @@
 # MiukiProdiaDiscord
-A Simple Discord bot powered by Prodia API
+Um bot de Discord simples alimentado pela API Prodia
 
-# pre-requirements
+# pré-requisitos
 - Python 3.10+
-- Git 
-- Prodia & Discord bot api keys
+- Git
+- Chaves de API do Prodia e do bot do Discord
 
-# running
-- clone repo
+# execução
+- clone o repositório
   ```cmd
   git clone https://github.com/Hirothewolf/MiukiProdiaDiscord
   cd stable-diffusion-bot
   ```
-- open main.py with ide and put your api keys there
-- install requirements
+- abra o arquivo main.py com um IDE e coloque suas chaves de API lá
+- instale os requisitos
   ```cmd
   pip install -r requirements.txt
   ```
-- run main.py
+- execute o main.py
   ```cmd
   python main.py
   ```
