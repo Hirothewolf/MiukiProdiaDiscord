@@ -34,7 +34,7 @@ upscale_models = [
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-# Inicializando as variáveis globais para os modelos e Loras
+# Inicialização das variáveis globais para os modelos e Loras
 model_choices_sdxl = []
 model_choices_sd1 = []
 loras_sdxl = []
@@ -177,7 +177,7 @@ async def lora_sd1x(interaction: discord.Interaction):
             await interaction.followup.send(message)
 
 #####################################
-#### /sdxlgen Command
+#### Comando /sdxlgen
 #####################################
 
 @bot.tree.command(name="sdxlgen", description="Gera uma imagem com Stable Diffusion XL")
@@ -421,7 +421,7 @@ async def sdxl_inpaint(interaction: discord.Interaction,
 
     
 #####################################
-#### /upscale Command
+#### Comando /upscale
 #####################################
 
 @bot.tree.command(name="upscale", description="Realiza o upscale de uma imagem")
@@ -524,7 +524,7 @@ async def upscale(interaction: discord.Interaction,
         await interaction.edit_original_response(content='Erro ao realizar upscale. Tente novamente mais tarde.')
 
 #####################################
-#### /sd_1xgen Command
+#### Comando /sd_1xgen
 #####################################
 
 @bot.tree.command(name="sd_1xgen", description="Gera uma imagem com o Stable Diffusion 1.x")
@@ -630,12 +630,12 @@ async def sd_1x(interaction: discord.Interaction,
         await interaction.edit_original_response(content='Erro ao gerar imagem. Tente novamente mais tarde.')
 
 #####################################
-#### /sd1x_controlnet Command
+#### Comando /sd1x_controlnet
 #####################################
 
 
 #####################################
-#### /facerestorer Command
+#### Comando /facerestorer
 #####################################
 
 @bot.tree.command(name="facerestorer", description="Restaura o rosto em uma imagem")
@@ -699,7 +699,7 @@ async def facerestorer(interaction: discord.Interaction,
 
 
 #####################################
-#### /faceswap Command
+#### Comando /faceswap
 #####################################
 
 @bot.tree.command(name="faceswap", description="Troca de rostos entre duas imagens")
@@ -767,7 +767,7 @@ async def faceswap(interaction: discord.Interaction,
 
 
 #####################################
-#### /photomaker Command
+#### Comando /photomaker
 #####################################
 
 @bot.tree.command(name="photomaker", description="Gera imagens com consistência de personagem")
